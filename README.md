@@ -1,7 +1,6 @@
 ___
-# DELETE THIS INSTRUCTIONS AND ADD A SHORT INTRODUCTION ABOUT YOUR PROJECT
-___
+# Designing a RISC-V Based ASIP for Accelerating Third-Generation DNA Sequence Alignment on Embedded Systems
 
-## Please refer the instructions in below URL:
+This project aims to design a RISC-V-based Application-Specific Instruction-set Processor (ASIP) to accelerate third-generation DNA sequence alignment on embedded systems. DNA sequence alignment is a computationally intensive process, especially with novel long-read sequencing technologies like Oxford Nanopore and Pacific Biosciences, which produce reads of up to one million bases. Minimap2, a widely used third-generation DNA alignment tool on high-performance computing (HPC) platforms, faces challenges in executing efficiently on embedded devices due to its high computational demands.
 
-https://projects.ce.pdn.ac.lk/docs/how-to-add-a-project
+To address this, we aim to develop a custom hardware-accelerated co-processor for the chaining stage of Minimap2, identified as its primary performance bottleneck. The development will target the Rocket Chip platform, which leverages the RISC-V open standard instruction set architecture, enabling seamless integration with the Rocket Custom Co-processor (RoCC) interface. Whith this approach we aim to achieve efficient DNA sequence alignment acceleration on embedded systems platform.
