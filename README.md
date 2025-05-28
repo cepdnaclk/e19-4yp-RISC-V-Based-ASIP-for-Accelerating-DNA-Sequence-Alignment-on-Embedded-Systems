@@ -67,12 +67,6 @@ This project aims to fill that gap.
 
 ---
 
-## 🤝 Contributing
-
-If you're interested in computational genomics, RISC-V hardware design, or embedded bioinformatics applications, feel free to contribute!
-
----
-
 ## 🧠 Acknowledgments
 
 This research is conducted as part of ongoing academic efforts in **computational bioengineering** and **hardware-software co-design for genomics**.
