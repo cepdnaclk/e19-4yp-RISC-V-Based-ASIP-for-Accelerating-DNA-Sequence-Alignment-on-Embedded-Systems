@@ -1,0 +1,4 @@
+[submodule "chipyard"]
+	path = chipyard
+	url = https://github.com/CColombus/fyp-chipyard.git
+	branch = testaccelerator
