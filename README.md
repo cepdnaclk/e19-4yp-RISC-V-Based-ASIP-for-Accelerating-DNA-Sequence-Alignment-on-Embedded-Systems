@@ -1,6 +1,84 @@
-___
-# Designing a RISC-V Based ASIP for Accelerating Third-Generation DNA Sequence Alignment on Embedded Systems
+# Accelerating Minimap2 on Embedded Systems Using RISC-V Based ASIP
 
-This project aims to design a RISC-V-based Application-Specific Instruction-set Processor (ASIP) to accelerate third-generation DNA sequence alignment on embedded systems. DNA sequence alignment is a computationally intensive process, especially with novel long-read sequencing technologies like Oxford Nanopore and Pacific Biosciences, which produce reads of up to one million bases. Minimap2, a widely used third-generation DNA alignment tool on high-performance computing (HPC) platforms, faces challenges in executing efficiently on embedded devices due to its high computational demands.
+This repository accompanies the literature review and ongoing research into optimizing **Minimap2**, a widely used DNA sequence alignment tool, for **embedded systems** through the use of **RISC-V-based Application-Specific Instruction-set Processors (ASIPs)**. The project explores hardware acceleration of Minimap2's **chaining stage** using a custom co-processor integrated into the **Rocket Chip platform** via the **RoCC (Rocket Custom Coprocessor) interface**.
 
-To address this, we aim to develop a custom hardware-accelerated co-processor for the chaining stage of Minimap2, identified as its primary performance bottleneck. The development will target the Rocket Chip platform, which leverages the RISC-V open standard instruction set architecture, enabling seamless integration with the Rocket Custom Co-processor (RoCC) interface. Whith this approach we aim to achieve efficient DNA sequence alignment acceleration on embedded systems platform.
+---
+
+## 🧬 Motivation
+
+Third-generation DNA sequencing technologies, such as **Oxford Nanopore MinION**, enable portable real-time sequencing of long reads. While these technologies offer advantages in genome completeness and accuracy, they also pose serious **computational challenges**, particularly for **real-time and on-site processing**.
+
+Minimap2 is considered the gold-standard tool for long-read alignment but is computationally demanding—especially its **chaining stage**. Most optimization efforts so far have targeted **HPC systems**. There's a lack of research into accelerating Minimap2 on **embedded platforms** where **energy-efficiency and hardware constraints** are critical.
+
+This project aims to fill that gap.
+
+---
+
+## 🎯 Objectives
+
+- Review computational challenges in long-read DNA sequence alignment.
+- Identify performance bottlenecks in Minimap2, particularly in the chaining stage.
+- Explore hardware acceleration strategies for embedded systems using RISC-V.
+- Design and simulate an ASIP via the RoCC interface to accelerate chaining.
+- Evaluate performance improvements and resource utilization.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology         | Description                                                 |
+|--------------------|-------------------------------------------------------------|
+| **Minimap2**       | Long-read sequence aligner (baseline software)              |
+| **RISC-V**         | Open ISA used for designing a custom ASIP                   |
+| **Rocket Chip**    | RISC-V SoC generator with RoCC interface                    |
+| **RoCC**           | Custom co-processor interface in Rocket Chip                |
+| **Verilog / Chisel** | HDL/DSL used for ASIP design                              |
+| **FPGA / Simulation** | Optional future implementation for prototyping           |
+| **Linux / Ubuntu** | Target OS for embedded simulation and profiling             |
+
+---
+
+## 🗂️ Repository Structure
+
+_To be written_
+
+---
+
+## 📌 Current Status
+
+- ✅ Literature review completed  
+- ✅ Performance bottleneck identified: chaining stage in Minimap2  
+- ⚙️ ASIP design under development  
+- 🔄 Integration with Rocket Chip via RoCC pending  
+- 📊 Benchmarking and validation planned  
+
+---
+
+## 📈 Future Work
+
+- Integrate ASIP with Rocket Chip SoC  
+- Profile energy and latency on embedded simulations  
+- Port to FPGA for real-world prototyping  
+- Extend support to more stages in Minimap2 (seeding, alignment)  
+- Publish findings in a peer-reviewed venue  
+
+---
+
+## 📚 References
+
+- [Minimap2: Pairwise alignment for long DNA sequences](https://doi.org/10.1093/bioinformatics/bty191)
+- [Oxford Nanopore Technologies](https://nanoporetech.com/)
+- [Rocket Chip Generator](https://github.com/chipsalliance/rocket-chip)
+- Literature cited in the `docs/` folder
+
+---
+
+## 🤝 Contributing
+
+If you're interested in computational genomics, RISC-V hardware design, or embedded bioinformatics applications, feel free to contribute!
+
+---
+
+## 🧠 Acknowledgments
+
+This research is conducted as part of ongoing academic efforts in **computational bioengineering** and **hardware-software co-design for genomics**.
