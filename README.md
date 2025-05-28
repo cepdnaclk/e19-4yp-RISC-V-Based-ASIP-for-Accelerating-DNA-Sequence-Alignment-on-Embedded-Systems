@@ -40,7 +40,17 @@ This project aims to fill that gap.
 
 ## 🗂️ Repository Structure
 
-_To be written_
+```bash
+
+├── docs/                  # Literature review, architecture diagrams, and references
+├── minimap2/              # Original or modified Minimap2 source code
+├── hardware/              # Custom ASIP implementation (Verilog/Chisel)
+│   ├── rocc_accelerator/  # RoCC-based co-processor code
+│   └── testbenches/       # Simulation and verification files
+├── results/               # Benchmarking, profiling, and performance graphs
+├── scripts/               # Scripts for simulation, compilation, and data generation
+├── LICENSE
+└── README.md
 
 ---
 
